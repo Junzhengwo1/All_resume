@@ -2,6 +2,7 @@ package single;
 
 /**
  * @author JIAJUN KOU
+ * 饿汉方式
  */
 public class EHan {
 

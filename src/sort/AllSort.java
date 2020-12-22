@@ -1,5 +1,7 @@
 package sort;
 
+import java.util.Arrays;
+
 /**
  * @author JIAJUN KOU
  */
@@ -48,7 +50,24 @@ public class AllSort {
         return a;
     }
 
-
+    /**
+     * 插入排序
+     */
+    public static void insertSort(int[] array) {
+        int i,j,temp;
+        for(i=1;i<array.length;i++) {
+            temp=array[i];
+            for(j=i-1;j>=0;j--) {
+                if(temp>array[j]) {
+                    break;
+                }else {
+                    array[j+1]=array[j];
+                }
+            }
+            array[j+1]=temp;
+        }
+        System.out.println(Arrays.toString(array));
+    }
 
 
 
@@ -61,12 +80,13 @@ public class AllSort {
 
 
     public static void main(String[] args) {
-        //int[] a={1,2,3,4};
+        int[] a={1,100,3,4};
         int[] ints = AllSort.BubbleSort(new int[]{1,3,4,650});
         for (int anInt : ints) {
           System.out.println(anInt);
         }
 
+        AllSort.insertSort(a);
 
     }
 
