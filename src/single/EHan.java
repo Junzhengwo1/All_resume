@@ -11,6 +11,8 @@ public class EHan {
     public static EHan getInstance(){
         return instance;
     }
+
+
     public static void main(String[] args) {
 
         EHan eHan= EHan.getInstance();

@@ -1,4 +1,4 @@
-package proxy;
+package proxy.dynamicProxy;
 
 /**
  * @author dell
