@@ -76,9 +76,6 @@ public class AllSort {
 
 
 
-
-
-
     public static void main(String[] args) {
         int[] a={1,100,3,4};
         int[] ints = AllSort.BubbleSort(new int[]{1,3,4,650});
