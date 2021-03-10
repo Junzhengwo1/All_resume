@@ -18,11 +18,29 @@ public class ReverseArray {
         return arr;
     }
 
+
+    public static int[] reverse2(int[] a){
+        //用一个结果数组存
+        int[] result=new int[a.length];
+
+        for (int i = 0,j=result.length-1; i <a.length ; i++,j--) {
+            result[j]=a[i];
+        }
+        return result;
+
+    }
+
+
     public static void main(String[] args) {
         int[] a={1,2,3,4,5};
-        int[] reverse = reverse(a);
-        for (int i : reverse) {
-            System.out.println(i);
+//        int[] reverse = reverse(a);
+//        for (int i : reverse) {
+//            System.out.println(i);
+//        }
+
+        int[] ints = reverse2(a);
+        for (int i = 0; i < ints.length; i++) {
+            System.out.println(ints[i]);
         }
 
     }
