@@ -1,13 +1,13 @@
 package javaStringAllFucation;
 
+import java.util.Arrays;
+import java.util.Date;
+import java.util.stream.Stream;
+
 /**
  * @author JIAJUN KOU
  */
 public class JavaString {
-
-    public static void main(String[] args) {
-
-    }
 
     /**
      * 字符串常量池
@@ -40,12 +40,141 @@ public class JavaString {
      *
      */
 
-    /**
-     * StringBuilder 与 StringBuffer的区别
-     *
-     *
-     */
 
+     /**
+     *contentEquals()内容比较方法 注意：不可以比较null
+     */
+    public static boolean comString(){
+        String s="abcde";
+        String a="ABcdE";
+        boolean b = s.contentEquals(new StringBuffer("abcde"));
+        boolean b1 = a.equalsIgnoreCase(s);
+        return b1;
+    }
+
+    public static void compareTest(){
+        String s="abcde";
+        String d="abcke";
+        System.out.println(s.compareTo(d));
+    }
+
+    public static void main(String[] args) {
+        //boolean b = JavaString.comString();
+        //System.out.println(b);
+        //JavaString.compareTest();
+
+        String s="Make";
+        boolean m = s.startsWith("M");
+        boolean e = s.endsWith("e");
+        System.out.println(m);
+        System.out.println(e);
+
+        //字符串长度length()
+        String a="";
+        boolean b = a.isEmpty();
+        System.out.println(b);
+
+        /**
+         * 搜索字符串；注意大小写
+         */
+        String g="kjjkouwangkou";
+        boolean j = g.contains("j");
+        System.out.println(j);
+
+        int kou = g.indexOf("kou");//返回的第一个字母的下标
+        System.out.println(kou);
+        int kou1 = g.indexOf("kou", 7);//开始位置开始搜索
+        System.out.println(kou1);
+
+        /**
+         * 替换子字符串replaceFirst()
+         */
+        String k="kouw-angkou";
+        //把前面这个字符串替换成后面的这个字符串
+        String s1 = k.replaceFirst("kou", "king");
+        System.out.println(s1);
+        //将字符串中对应的字符全部替换掉
+        String s2 = k.replaceAll("kou", "A");
+        System.out.println(s2);
+        //直接替换replace()字符串（还可以是StringBuilder&StringBuffer）
+        String replace = k.replace("-", "//");
+        System.out.println(replace);
+
+        /**
+         *截取字符串
+         */
+        String k2="kouwangkouking";
+        String substring = k2.substring(2);
+        System.out.println(substring);
+        //前包后不包
+        String substring1 = k2.substring(3, 7);
+        System.out.println(substring1);
+        CharSequence charSequence = k2.subSequence(7, 10);
+        System.out.println(charSequence);
+        //就是要指定字段的字符
+        char c = k2.charAt(3);
+        System.out.println(c);
+
+        /**
+         * 拆分字符串
+         */
+        String k3="kou-wang-king";
+        String[] split = k3.split("-");//按照指定的符号来拆分字符
+        for (String s3 : split) {
+            System.out.println(s3);
+        }
+
+
+        /**
+         * 拼接字符串
+         */
+        String k4="kou";
+        String k5="jia";
+        String k6="jun";
+        //concat（） 只支持String,一般不推荐这个方法来拼接，推荐使用（"+"）
+        String concat = k4.concat(k5);
+        System.out.println(concat);
+        //以第一个参数为连接符号，后面的字符连接起来。
+        String join = String.join("_", "wang","kou","king");
+        System.out.println(join);
+
+
+        /**
+         * 转换字符串
+         * 大小写转换
+         */
+        String k8 ="king-kou-king-wang";
+        String s3 = k8.toUpperCase();
+        System.out.println(s3);
+        String s4 = s3.toLowerCase();
+        System.out.println(s4);
+        //toCharArray（）返回的就是String字符数组的副本
+        char[] chars = k8.toCharArray();
+        for (char aChar : chars) {
+            System.out.println(aChar);
+        }
+        //把其他类型的数据转换成String 的对象(所有对象都是可以转换成String的)
+        Integer f =100;
+        Date date = new Date();
+        String s5 = String.valueOf(f);
+        System.out.println(s5);
+        String s6 = String.valueOf(date);
+        System.out.println(date);
+        System.out.println(s6);
+        //字符数组的操作
+        System.out.println(String.valueOf(new char[]{'k', 'o', 'u'}));
+        //copyValueOf()只能转换字符数组类型的
+
+        //--------------------------------*----------------------------
+        /**
+         * StringBuilder 与 StringBuffer的区别
+         * StringBuilder不保证同步
+         * StringBuilder 同步
+         */
+
+
+
+    }
 
 
 }
