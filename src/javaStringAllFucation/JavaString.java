@@ -169,9 +169,12 @@ public class JavaString {
         /**
          * StringBuilder 与 StringBuffer的区别
          * StringBuilder不保证同步
-         * StringBuilder 同步
+         * StringBuffer 同步
          */
-
+        StringBuffer buffer = new StringBuffer("kouwangking");
+        StringBuffer append = buffer.append(2);
+        System.out.println("buffer.append(new char[]{'j','a'}) = " + buffer.append(new char[]{'j', 'a'}));
+        System.out.println(append);
 
 
     }
