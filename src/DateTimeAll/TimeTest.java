@@ -1,9 +1,10 @@
 package DateTimeAll;
 
 
-import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -63,7 +64,36 @@ public class TimeTest {
         Calendar instance = Calendar.getInstance();
         System.out.println("instance.get(Calendar.YEAR) = " + instance.get(Calendar.YEAR));
         System.out.println(instance.getTime());
+        //计算一周以后是多少号
+        instance.add(Calendar.WEEK_OF_MONTH,1);
+        System.out.println(instance.get(Calendar.MONTH)+1);
+        System.out.println(instance.get(Calendar.DATE));
 
+        //构造自定义的时间对象
+        instance.set(1999,11,23);
+        System.out.println(instance.get(Calendar.YEAR));
+        //格式化Calender类
+        System.out.println(instance.getTime());
+        /**
+         * 此处有大坑二
+         *就是历法的计算1582年
+         */
+        Date date4 = new Date("1582/1/14");
+
+        /**
+         * 新时时间类
+         * LocalDate&LocalTime
+         */
+        System.out.println(LocalDateTime.now());
+        System.out.println("LocalDate.now() = " + LocalDate.now());
+        System.out.println("LocalDate.of(1999,11,23) = " + LocalDate.of(1999, 11, 23));
+        //a修改时间分量
+        LocalDate now = LocalDate.now();
+        LocalDate localDate = now.withMonth(3);
+        System.out.println(localDate);
+        System.out.println(now);//原来的时间对象是不会变的
+        LocalDate localDate1 = now.withDayOfMonth(20);//修改日期
+        System.out.println(localDate1);
 
     }
 
