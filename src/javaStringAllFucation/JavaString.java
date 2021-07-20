@@ -20,14 +20,6 @@ public class JavaString {
      *       使用new关键字的String对象，一定不在常量池中。
      */
 
-
-    /**
-     * 比较字符串的内容
-     *
-     *
-     */
-
-
     /**
      * 字符串拼接
      *空对象参与拼接的话，会把null四个字母当作字符拼接起来。
@@ -44,6 +36,11 @@ public class JavaString {
      * StringBuilder 与 StringBuffer的区别
      *
      *
+     */
+
+
+    /**
+     * 比较字符串的相关内容
      */
 
 
