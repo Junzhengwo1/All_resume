@@ -87,13 +87,19 @@ public class TimeTest {
         System.out.println(LocalDateTime.now());
         System.out.println("LocalDate.now() = " + LocalDate.now());
         System.out.println("LocalDate.of(1999,11,23) = " + LocalDate.of(1999, 11, 23));
-        //a修改时间分量
+        //a修改时间分量一
         LocalDate now = LocalDate.now();
         LocalDate localDate = now.withMonth(3);
         System.out.println(localDate);
         System.out.println(now);//原来的时间对象是不会变的
         LocalDate localDate1 = now.withDayOfMonth(20);//修改日期
         System.out.println(localDate1);
+
+        //修改LocalTime时间分量二
+        LocalDate now1 = LocalDate.now();
+        System.out.println("now1 = " + now1);
+        LocalDate localDate2 = now1.plusYears(2);
+        System.out.println("localDate2 = " + localDate2);
 
     }
 
