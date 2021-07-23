@@ -1,12 +1,16 @@
 package DateTimeAll;
 
 
+import com.sun.org.apache.xerces.internal.xs.datatypes.ObjectList;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.MonthDay;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.stream.Stream;
 
 /**
  * @author JIAJUN KOU
@@ -94,6 +98,49 @@ public class TimeTest {
         System.out.println(now);//原来的时间对象是不会变的
         LocalDate localDate1 = now.withDayOfMonth(20);//修改日期
         System.out.println(localDate1);
+
+        LocalDate now1 = LocalDate.now();
+        LocalDate localDate2 = now1.plusMonths(2);
+        System.out.println("localDate2 = " + localDate2);
+
+        /**
+         * 日期的比较
+         * ----------------------重点----------------------
+         * 主要就是compareTo（）
+         */
+        LocalDate now2 = LocalDate.now();
+        LocalDate of = LocalDate.of(2010, 8, 23);
+        System.out.println(now2.compareTo(of));//返回值如果为正数。则说明前者晚于后者
+        /**
+         * 求两个日期相差
+         * ---------------------重点----------------------
+         */
+        //计算到1999年1月7号相差多少天
+        LocalDate now3 = LocalDate.now();
+        LocalDate of1 = LocalDate.of(1999, 1, 7);
+        long day = now3.toEpochDay();
+        long day1 = of1.toEpochDay();
+        System.out.println("(day-day1) = " + (day - day1));
+
+        System.out.println("------------------------------------");
+        System.out.println("of1.until(now3) = " + of1.until(now3));
+        System.out.println("------------------------------------");
+        //打印出两个时间间隔的每一天
+        LocalDate now4 = LocalDate.now();
+        LocalDate of2 = LocalDate.of(2021, 7, 20);
+        //这个方法可以打印成Stream的天数；不知为何没有这个方法
+        //Stream<LocalDate> dates=of2.datesUntil(now4);//注意now4当天不会遍历出来
+        //Object[] array=dates.toArray();//就可以遍历了。
+        /**
+         * 判断特殊日期
+         * ---------------------重点----------------------
+         * 例如判断某个时间是不是某个人生日，属于周期性的日期
+         */
+        LocalDate now5 = LocalDate.now();
+        LocalDate of3 = LocalDate.of(1999, 1, 7);
+        MonthDay birthday = MonthDay.of(1, 7);
+        MonthDay today = MonthDay.from(now5);//这就把now5中的年份去掉了，保留了月和日
+
 
     }
 
