@@ -1,4 +1,4 @@
-package myselfUtils;
+package myselfUtils.timeAll;
 
 import java.time.LocalDate;
 import java.time.Period;
@@ -19,5 +19,15 @@ public class calculateTwoTime {
         Period between = Period.between(from, to);
         return between.getYears()+"年"+between.getMonths()+"月"+between.getDays()+"天";
     }
+
+    /**
+     * 通过时间秒毫秒数判断两个时间的间隔
+     */
+    public static int betweenDay(Date startDate, Date endDate) {
+        //if (ObjectUtils.isEmpty(startDate) || ObjectUtils.isEmpty(endDate)) return 0;
+        int days = (int) ((endDate.getTime() - startDate.getTime()) / (1000 * 3600 * 24));
+        return days;
+    }
+
 
 }

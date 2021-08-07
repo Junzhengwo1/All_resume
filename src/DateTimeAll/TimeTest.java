@@ -5,9 +5,9 @@ import com.sun.org.apache.xerces.internal.xs.datatypes.ObjectList;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.MonthDay;
+import java.time.*;
+import java.time.temporal.ChronoField;
+import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.stream.Stream;
@@ -88,6 +88,7 @@ public class TimeTest {
          * 新时时间类
          * LocalDate&LocalTime
          */
+        System.out.println("==========================================================================");
         System.out.println(LocalDateTime.now());
         System.out.println("LocalDate.now() = " + LocalDate.now());
         System.out.println("LocalDate.of(1999,11,23) = " + LocalDate.of(1999, 11, 23));
@@ -138,8 +139,56 @@ public class TimeTest {
          */
         LocalDate now5 = LocalDate.now();
         LocalDate of3 = LocalDate.of(1999, 1, 7);
-        MonthDay birthday = MonthDay.of(1, 7);
+        MonthDay birthday = MonthDay.of(11, 23);
         MonthDay today = MonthDay.from(now5);//这就把now5中的年份去掉了，保留了月和日
+
+        System.out.println("today.isBefore(of3) = " + now5.isBefore(of3));
+        int tmp = today.compareTo(birthday);
+        System.out.println("i = " + tmp);//如果返回是0就表明是
+        //计算当前日期到下一次生日的还有多少天
+        LocalDate nextBirthday;
+        if(tmp<=0){//今天比birthday早意思就是说，目前还没有过今年的生日
+            nextBirthday=birthday.atYear(now5.getYear());
+        }else {
+            //给monthDay也可以添加年份
+            nextBirthday=birthday.atYear(now5.getYear());
+        }
+        //计算现在到下一次生日的还差多少天
+        long until = now5.until(nextBirthday, ChronoUnit.DAYS);
+        System.out.println("until = " + until);
+
+        /**
+         * localTime对象
+         *
+         */
+        LocalTime now6 = LocalTime.now();
+        System.out.println("now6 = " + now6);
+        System.out.println("now6.get(ChronoField.MILLI_OF_SECOND) = " + now6.get(ChronoField.MILLI_OF_SECOND));
+        //计算两个时间点的时间差
+        LocalTime of4 = LocalTime.of(15, 0);
+        long until1 = now6.until(of4, ChronoUnit.MINUTES);
+        System.out.println("until1 = " + until1);
+        /**
+         * localDateTime对象
+         *
+         */
+        LocalDate ld = LocalDate.now();
+        LocalTime lt = LocalTime.now();
+        LocalDateTime of5 = LocalDateTime.of(ld, lt);
+        System.out.println("of5 = " + of5);
+
+        /**
+         * Period对象：表示以年月日为计时单位的时间间隔
+         * Duration对象：表示以秒，纳秒为计时单位的时间间隔
+         * ZoneId：时区时差
+         * 。。。
+         *
+         */
+        
+
+
+
+
 
 
     }
