@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 public class BigDecimalUtil {
 
     /**
-     * 计算增幅 保留两位小数 百分数
+
      * @param oldBd
      * @param newBd
      * @return
@@ -25,7 +25,7 @@ public class BigDecimalUtil {
     }
 
     /**
-     * 计算增幅 保留四位小数
+
      * @param oldBd
      * @param newBd
      * @return

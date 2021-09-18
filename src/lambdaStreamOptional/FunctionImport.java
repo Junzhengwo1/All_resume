@@ -30,6 +30,9 @@ public class FunctionImport {
         MyFunctionInterface2 myFunctionInterface2 = functionImport::objGet;
         System.out.println(myFunctionInterface2.getMeg("王queen"));
 
+
+
+
     }
 
     //静态方法的方法引入

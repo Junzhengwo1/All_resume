@@ -97,9 +97,11 @@ public class JavaString {
          */
         String k2="kouwangkouking";
         String substring = k2.substring(2);
+        System.out.println("----------------------------截取结果-------------------");
         System.out.println(substring);
         //前包后不包
         String substring1 = k2.substring(3, 7);
+        System.out.println("前包后不包");
         System.out.println(substring1);
         CharSequence charSequence = k2.subSequence(7, 10);
         System.out.println(charSequence);
@@ -120,6 +122,7 @@ public class JavaString {
         /**
          * 拼接字符串
          */
+        System.out.println("字符串拼接---------------------------------------------");
         String k4="kou";
         String k5="jia";
         String k6="jun";

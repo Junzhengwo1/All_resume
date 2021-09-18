@@ -1,16 +1,16 @@
 package lambdaStreamOptional;
 
-
-import com.sun.media.jfxmediaimpl.HostUtils;
-
 import java.util.*;
 import java.util.function.BiConsumer;
-
-
+import java.util.function.Consumer;
+import java.util.function.Supplier;
 import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.*;
 
+/**
+ * 接口中只有一个抽象方法的接口。
+ */
 public class LambdaStreamOptional {
     public static void main(String[] args) {
         List<User> users=new ArrayList<User>();
@@ -29,15 +29,20 @@ public class LambdaStreamOptional {
         });
         users.forEach(user -> System.out.println(user));
 
-        //TODO 2、转换成set集合
+        //TODO  收集-----> 2、转换成set集合
         System.out.println("转换成set集合的遍历结果------------------");
-        users.stream().collect(toSet()).forEach(user -> System.out.println(user));
+        users.stream()
+                .collect(toSet())
+                .forEach(user -> System.out.println(user));
         //TODO 3、list集合转换成map集合Function<User, String>:其中User为val，String则是key
         Map<String, User> collect = users.stream().collect(toMap(user -> {
             return user.getName();//name作为key
         }, user -> {
             return user;//对象本身作为val
         }));
+
+
+
 
         System.out.println("转换成map集合之后的遍历结果------------------------");
         //TODO 4、map的遍历
@@ -57,6 +62,16 @@ public class LambdaStreamOptional {
         System.out.println("第二种求和写法-------------------");
         int v = users.stream().mapToInt(user -> user.getAge()).sum();
         System.out.println(v);
+
+        /**
+         * 归约
+         */
+        System.out.println("第三种求和写法-----------------");
+        Optional<Integer> reduce = users.stream()
+                .map(User::getAge)
+                .reduce(Integer::sum);
+        Integer integer = reduce.get();
+        System.out.println("结果"+integer);
 
         //TODO 6、使用stream找到最大值最小值
         System.out.println("use Stream ------------------------------->");
@@ -106,7 +121,10 @@ public class LambdaStreamOptional {
         Students.stream().limit(2).forEach(student -> System.out.println(student));//相当于就是取头两条
         //按照指定位置取
         System.out.println("stream实现limit就是取指定两条----------------------");
-        Students.stream().skip(2).limit(3).forEach(student -> System.out.println(student));//跳过前面两条
+        Students.stream()
+                .skip(2)
+                .limit(3)
+                .forEach(student -> System.out.println(student));//跳过前面两条
         //TODO 10.Stream实现集合的排序
         System.out.println("排序--------------------");
         Students.stream()
@@ -121,13 +139,89 @@ public class LambdaStreamOptional {
                 .limit(2)
                 .forEach(student -> System.out.println(student));
 
+        //TODO 10、无限流 并操作 迭代
+//        System.out.println("无限流的结果------------------------------");
+//        Stream<Integer> aaa = Stream.iterate(0,(x)->x+2);
+//        aaa.forEach(System.out::print);
+
+        //TODO 11、映射 转换成大写 提取数据 例如收集集合的id 返回ids
+        System.out.println("转大写---------------------------------------");
+        List<String> strings = Arrays.asList("aaa", "Bbb", "CcC");
+        strings.stream()
+                .map(str->str.toUpperCase())
+                .forEach(System.out::println);
+
+
+
+
+
+        // TODO 定制化排序
+        System.out.println("定制化的结果-------------------------");
+        Collections.sort(Students,(s1,s2)->{
+            return (s1.getAge()-s2.getAge());
+        });
+        Students.forEach(student -> System.out.println(student));
+
+
+
+        // todo 四大函数式接口
+        /**
+         * Java8 内置的四大核心函数式接口
+         *
+         * Consumer<T>: 消费型接口
+         *      void accept(T t);
+         *
+         * Supplier<T>: 攻击型接口
+         *      T get();
+         *
+         * Function<T,R>: 函数型接口
+         *      R apply(T t);
+         *
+         * Predicate<T> : 断言型接口
+         *      boolean test(T t);
+         *
+         */
+        System.out.println("1、*******************************");
+        LambdaStreamOptional m = new LambdaStreamOptional();
+        m.happy(5000,nm-> {
+            nm+=800;
+            System.out.println(nm);
+        });
+        System.out.println("2、*******************************");
+        //产生指定个数的整数，并放入集合中
+        List<Integer> numList = m.getNumList(10, () ->
+                (int) (Math.random() * 100)
+        );
+        numList.forEach(n-> System.out.println(n));
+
 
 
 
     }
 
 
+
+    //供给型方法
+    public List<Integer> getNumList(int num, Supplier<Integer> supplier){
+        ArrayList<Integer> integers = new ArrayList<>();
+        for (int i = 0; i <num ; i++) {
+            Integer integer = supplier.get();
+            integers.add(integer);
+        }
+        return integers;
+    }
+
+
+    //消费型方法
+    public void happy(double money, Consumer<Double> consumer){
+        consumer.accept(money);
+    }
+
+
 }
+
+
+
 
 class User{
 
