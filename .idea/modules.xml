@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/All_resume.iml" filepath="$PROJECT_DIR$/All_resume.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sensitive_words/sensitive_words.iml" filepath="$PROJECT_DIR$/sensitive_words/sensitive_words.iml" />
     </modules>
   </component>
 </project>
