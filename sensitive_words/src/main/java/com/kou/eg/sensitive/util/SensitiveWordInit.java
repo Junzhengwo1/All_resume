@@ -1,7 +1,6 @@
 package com.kou.eg.sensitive.util;
 
 import com.kou.eg.sensitive.entity.SensitiveWordEntity;
-import org.springframework.util.StringUtils;
 
 import java.util.*;
 
