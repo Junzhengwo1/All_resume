@@ -28,7 +28,11 @@ public class SensitiveWordInit {
         return sensitiveWordMap;
     }
 
-
+    /**
+     * 封装敏感词库
+     *
+     * @param keyWordSet
+     */
     private void addSensitiveWordToHashMap(Set<String> keyWordSet){
         sensitiveWordMap = new HashMap(keyWordSet.size());
         //敏感词
