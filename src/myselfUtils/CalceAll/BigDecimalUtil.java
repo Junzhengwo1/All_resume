@@ -82,4 +82,8 @@ public class BigDecimalUtil {
         return bd;
     }
 
+
+
+
+   // double sum = result.stream().mapToDouble(exl -> NumberUtil.sub(exl.getTaxAmount(),exl.getAppliedAmount()).multiply(new BigDecimal("-1")).doubleValue()).sum();
 }
