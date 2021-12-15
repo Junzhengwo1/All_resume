@@ -53,7 +53,7 @@ import java.util.Map;
 //Java：两数之和
 public class TwoSum{
     public static void main(String[] args) {
-        Solution solution = new TwoSum().new Solution();
+        Solution solution = new Solution();
         // TO TEST
         int[] a ={11,15,2,7};
         int b = 9;
@@ -65,11 +65,13 @@ public class TwoSum{
 
     }
 
-    /**
-     * 循环思想
-     */
+
     //leetcode submit region begin(Prohibit modification and deletion)
-    class Solution {
+    static class Solution {
+
+        /**
+         * 循环思想
+         */
         public int[] twoSum(int[] nums, int target) {
 
             for (int i = 0; i < nums.length; i++) {

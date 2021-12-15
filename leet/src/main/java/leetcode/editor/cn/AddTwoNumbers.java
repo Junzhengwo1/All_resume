@@ -44,13 +44,13 @@ package leetcode.editor.cn;
 //Java：两数相加
 public class AddTwoNumbers{
     public static void main(String[] args) {
-        Solution solution = new AddTwoNumbers().new Solution();
+        Solution solution = new Solution();
         // TO TEST
 
     }
 
 
-    public class ListNode {
+    public static class ListNode {
         int val;
         ListNode next;
 
@@ -69,7 +69,7 @@ public class AddTwoNumbers{
 
     //输入：l1 = [2,4,3], l2 = [5,6,4]
     //输出：[7,0,8]
-    class Solution {
+    static class Solution {
         public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
             return null;
