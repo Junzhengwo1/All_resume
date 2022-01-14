@@ -46,7 +46,12 @@ public class AddTwoNumbers{
     public static void main(String[] args) {
         Solution solution = new Solution();
         // TO TEST
+        ListNode listNode = new ListNode();
+        listNode.add(2);
+        listNode.add(4);
+        listNode.add(3);
 
+        listNode.list(listNode);
     }
 
 
@@ -57,22 +62,72 @@ public class AddTwoNumbers{
         ListNode() {
         }
 
-        ListNode(int val) {
+        public ListNode(int val) {
             this.val = val;
         }
 
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
+        public static ListNode head;
+        public static ListNode tail;
+        public void add(int n){
+            head = new ListNode(0);
+            ListNode temp = head;
+            for (int i = 1; i < n+1; i++) {
+                temp.next = new ListNode(i);
+                temp = temp.next;
+            }
+            tail = temp;
         }
+
+        /**
+         * 打印链表
+         * @param node
+         */
+        public void list(ListNode node){
+            ListNode temp = node;
+            while(temp!=null){
+                System.out.println(temp.val);
+                temp = temp.next;
+            }
+        }
+
     }
+
+
 
     //输入：l1 = [2,4,3], l2 = [5,6,4]
     //输出：[7,0,8]
     static class Solution {
         public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-
-            return null;
+            int total = 0;
+            int next  = 0;
+            ListNode result = new ListNode();
+            ListNode current = result;
+            while(l1 != null && l2!= null){
+                total= l1.val+l2.val+next;
+                current.next=new ListNode(total%10);
+                next = total/10;
+                l1 =l1.next;
+                l2 =l2.next;
+                current = current.next;
+            }
+            while (l1 != null){
+                total = l1.val+next;
+                current.next=new ListNode(total%10);
+                next = total/10;
+                l1 = l1.next;
+                current = current.next;
+            }
+            while (l2 != null){
+                total = l2.val+next;
+                current.next=new ListNode(total%10);
+                next = total/10;
+                l2 = l2.next;
+                current = current.next;
+            }
+            if (next != 0){
+                current.next=new ListNode(next);
+            }
+            return result.next;
         }
     }
 

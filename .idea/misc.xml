@@ -4,6 +4,13 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/sensitive_words/pom.xml" />
+        <option value="$PROJECT_DIR$/ecxel/pom.xml" />
+        <option value="$PROJECT_DIR$/selfann/pom.xml" />
+        <option value="$PROJECT_DIR$/base/pom.xml" />
+        <option value="$PROJECT_DIR$/leet/pom.xml" />
+        <option value="$PROJECT_DIR$/neety-study/pom.xml" />
+        <option value="$PROJECT_DIR$/security/pom.xml" />
+        <option value="$PROJECT_DIR$/auth/pom.xml" />
       </list>
     </option>
   </component>

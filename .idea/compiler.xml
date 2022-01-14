@@ -7,15 +7,36 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="leet" />
+        <module name="auth" />
         <module name="sensitive_words" />
+        <module name="neety-study" />
+        <module name="base" />
+        <module name="selfann" />
+        <module name="ecxel" />
+        <module name="security" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="auth" target="1.8" />
+      <module name="base" target="1.8" />
+      <module name="ecxel" target="1.8" />
+      <module name="leet" target="1.8" />
+      <module name="neety-study" target="1.8" />
+      <module name="security" target="1.8" />
+      <module name="selfann" target="1.8" />
       <module name="sensitive_words" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="auth" options="-parameters" />
+      <module name="base" options="-parameters" />
+      <module name="ecxel" options="-parameters" />
+      <module name="leet" options="" />
+      <module name="neety-study" options="-parameters" />
+      <module name="security" options="-parameters" />
+      <module name="selfann" options="-parameters" />
       <module name="sensitive_words" options="-parameters" />
     </option>
   </component>
