@@ -8,16 +8,20 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="leet" />
+        <module name="asgg" />
         <module name="auth" />
         <module name="sensitive_words" />
         <module name="neety-study" />
         <module name="base" />
         <module name="selfann" />
+        <module name="activite" />
         <module name="ecxel" />
         <module name="security" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="activite" target="1.8" />
+      <module name="asgg" target="1.8" />
       <module name="auth" target="1.8" />
       <module name="base" target="1.8" />
       <module name="ecxel" target="1.8" />
@@ -30,6 +34,8 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="activite" options="-parameters" />
+      <module name="asgg" options="-parameters" />
       <module name="auth" options="-parameters" />
       <module name="base" options="-parameters" />
       <module name="ecxel" options="-parameters" />

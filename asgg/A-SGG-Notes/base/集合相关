@@ -1,0 +1,7 @@
+当我们new ArrayList<Integer>();
+ArrayList线程不安全的额实例：
+       就是多个线程来操作了list集合。（花名册案例）
+       解决方法：
+       1.Collections.synchronizedList(new ArrayList<Integer>());
+       2.CopyOnWriteArrayList<>() 写时复制（读写分离的思想）：ReentrantLock 就在这一块体现
+

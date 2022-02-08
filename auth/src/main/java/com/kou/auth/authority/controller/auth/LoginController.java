@@ -29,6 +29,7 @@ import java.io.IOException;
 @RequestMapping("/anno")
 @Api(value = "UserAuthController", tags = "登录")
 @Slf4j
+@SuppressWarnings("all")
 public class LoginController {
 
     @ApiOperation("验证码")

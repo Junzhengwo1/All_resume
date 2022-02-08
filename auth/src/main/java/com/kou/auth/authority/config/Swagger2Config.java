@@ -1,5 +1,6 @@
 package com.kou.auth.authority.config;
 
+import io.swagger.annotations.Api;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
@@ -22,7 +23,7 @@ public class Swagger2Config {
                 .groupName("webApi")
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.kou.auth.*.controller"))
+                .apis(RequestHandlerSelectors.any())
                 .paths(PathSelectors.any())
                 .build();
 //                .securityContexts(securityContexts())
@@ -33,7 +34,7 @@ public class Swagger2Config {
         return new ApiInfoBuilder()
                 .title("权限接口文档")
                 .description("操作手册")
-                .contact(new Contact("Cordy","http:localhost:11000/doc.html","xxx@qq.com"))
+                .contact(new Contact("Cordy",null,"xxx@qq.com"))
                 .version("1.0")
                 .build();
     }

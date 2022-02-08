@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/All_resume.iml" filepath="$PROJECT_DIR$/All_resume.iml" />
+      <module fileurl="file://$PROJECT_DIR$/activite/activite.iml" filepath="$PROJECT_DIR$/activite/activite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/asgg/asgg.iml" filepath="$PROJECT_DIR$/asgg/asgg.iml" />
       <module fileurl="file://$PROJECT_DIR$/auth/auth.iml" filepath="$PROJECT_DIR$/auth/auth.iml" />
       <module fileurl="file://$PROJECT_DIR$/base/base.iml" filepath="$PROJECT_DIR$/base/base.iml" />
       <module fileurl="file://$PROJECT_DIR$/ecxel/ecxel.iml" filepath="$PROJECT_DIR$/ecxel/ecxel.iml" />
