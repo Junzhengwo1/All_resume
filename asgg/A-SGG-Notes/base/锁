@@ -1,0 +1,3 @@
+synchronized 与 ReentrantLock 的区别：
+1:一直等待：synchronized  一直等待 海枯石烂 深情款款
+2:过时不候：过期时间 tryLock 尝试等待 蜻蜓点水般爱过

@@ -1,0 +1,1 @@
+@ComponentScan("com.kou.auth.*") controller 扫描路径需要注意

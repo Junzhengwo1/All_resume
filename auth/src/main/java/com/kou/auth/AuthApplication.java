@@ -21,7 +21,7 @@ import java.net.UnknownHostException;
 @EnableDiscoveryClient
 @MapperScan("com.kou.auth.authority.biz.dao")
 @EnableSwagger2
-@ComponentScan("com.kou.auth.authority.config")
+@ComponentScan("com.kou.auth.*")
 @SpringBootApplication
 public class AuthApplication {
 
