@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.kou.auth.biz.dao.auth.ResourceMapper">
+<mapper namespace="com.kou.auth.authority.biz.dao.auth.ResourceMapper">
 
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="com.kou.auth.entity.auth.Resource">
@@ -22,5 +22,7 @@
         id, create_user, create_time, update_user, update_time, 
         code, name, menu_id, describe_,method,url
     </sql>
+
+
 
 </mapper>

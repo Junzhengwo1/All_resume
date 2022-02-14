@@ -46,7 +46,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
-            <version>1.1.13</version>
+            <version>1.2.8</version>
         </dependency>
 
         <!-- JSER303校验 -->
@@ -106,7 +106,12 @@
             <version>1.9.6</version>
         </dependency>
 
-
+        <!--google的 Kaptcha-->
+        <dependency>
+            <groupId>com.github.axet</groupId>
+            <artifactId>kaptcha</artifactId>
+            <version>0.0.9</version>
+        </dependency>
 
         <!-- 获取注册中心的数据会用到 -->
         <dependency>

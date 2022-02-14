@@ -27,11 +27,27 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leet/src/main/java/leetcode/editor/cn/IsUniqueLcci.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/leet/src/main/java/leetcode/editor/cn/IsUniqueLcci.java" />
+              <option name="questionId" value="100158" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leet/src/main/java/leetcode/editor/cn/LongestSubstringWithoutRepeatingCharacters.java">
           <value>
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/leet/src/main/java/leetcode/editor/cn/LongestSubstringWithoutRepeatingCharacters.java" />
               <option name="questionId" value="3" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leet/src/main/java/leetcode/editor/cn/MedianOfTwoSortedArrays.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/leet/src/main/java/leetcode/editor/cn/MedianOfTwoSortedArrays.java" />
+              <option name="questionId" value="4" />
             </LeetcodeEditor>
           </value>
         </entry>
