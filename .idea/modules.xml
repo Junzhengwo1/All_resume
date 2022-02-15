@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/ecxel/ecxel.iml" filepath="$PROJECT_DIR$/ecxel/ecxel.iml" />
       <module fileurl="file://$PROJECT_DIR$/leet/leet.iml" filepath="$PROJECT_DIR$/leet/leet.iml" />
       <module fileurl="file://$PROJECT_DIR$/neety-study/neety-study.iml" filepath="$PROJECT_DIR$/neety-study/neety-study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nginx/nginx.iml" filepath="$PROJECT_DIR$/nginx/nginx.iml" />
       <module fileurl="file://$PROJECT_DIR$/security/security.iml" filepath="$PROJECT_DIR$/security/security.iml" />
       <module fileurl="file://$PROJECT_DIR$/selfann/selfann.iml" filepath="$PROJECT_DIR$/selfann/selfann.iml" />
       <module fileurl="file://$PROJECT_DIR$/sensitive_words/sensitive_words.iml" filepath="$PROJECT_DIR$/sensitive_words/sensitive_words.iml" />

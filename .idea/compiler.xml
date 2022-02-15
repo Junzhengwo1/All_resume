@@ -8,14 +8,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="leet" />
-        <module name="asgg" />
-        <module name="auth" />
-        <module name="sensitive_words" />
-        <module name="neety-study" />
-        <module name="base" />
-        <module name="selfann" />
-        <module name="activite" />
         <module name="ecxel" />
+        <module name="asgg" />
+        <module name="neety-study" />
+        <module name="auth" />
+        <module name="selfann" />
+        <module name="base" />
+        <module name="nginx" />
+        <module name="activite" />
+        <module name="sensitive_words" />
         <module name="security" />
       </profile>
     </annotationProcessing>
@@ -27,6 +28,7 @@
       <module name="ecxel" target="1.8" />
       <module name="leet" target="1.8" />
       <module name="neety-study" target="1.8" />
+      <module name="nginx" target="1.8" />
       <module name="security" target="1.8" />
       <module name="selfann" target="1.8" />
       <module name="sensitive_words" target="1.8" />
@@ -41,6 +43,7 @@
       <module name="ecxel" options="-parameters" />
       <module name="leet" options="" />
       <module name="neety-study" options="-parameters" />
+      <module name="nginx" options="-parameters" />
       <module name="security" options="-parameters" />
       <module name="selfann" options="-parameters" />
       <module name="sensitive_words" options="-parameters" />
