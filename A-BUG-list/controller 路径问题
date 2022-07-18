@@ -1,1 +1,1 @@
-@ComponentScan("com.kou.auth.*") controller 扫描路径需要注意
+swagger扫描包时遇到的错误：@ComponentScan("com.kou.auth.*") controller 扫描路径需要注意

@@ -50,8 +50,13 @@ public class AddTwoNumbers{
         listNode.add(2);
         listNode.add(4);
         listNode.add(3);
+        ListNode listNode1 = new ListNode();
+        listNode1.add(5);
+        listNode1.add(6);
+        listNode1.add(4);
+        ListNode listNode2 = solution.addTwoNumbers(listNode, listNode1);
 
-        listNode.list(listNode);
+        listNode.list(listNode2);
     }
 
 

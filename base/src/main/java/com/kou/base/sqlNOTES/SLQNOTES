@@ -1,0 +1,3 @@
+UPDATE boom_talent_channel tc
+INNER JOIN(SELECT talent_id,dict_category_key,dict_category_value from boom_talent) t ON tc.talent_id = t.talent_id
+SET tc.dict_category_key=t.dict_category_key,tc.dict_category_value=t.dict_category_value
