@@ -11,13 +11,14 @@
         <module name="nginx" />
         <module name="asgg" />
         <module name="neety-study" />
-        <module name="activite" />
+        <module name="intellectual" />
         <module name="auth" />
         <module name="sentinel" />
-        <module name="sensitive_words" />
         <module name="selfann" />
         <module name="base" />
         <module name="ecxel" />
+        <module name="activite" />
+        <module name="sensitive_words" />
         <module name="security" />
       </profile>
     </annotationProcessing>
@@ -27,6 +28,7 @@
       <module name="auth" target="1.8" />
       <module name="base" target="1.8" />
       <module name="ecxel" target="1.8" />
+      <module name="intellectual" target="17" />
       <module name="leet" target="1.8" />
       <module name="neety-study" target="1.8" />
       <module name="nginx" target="1.8" />
@@ -43,6 +45,7 @@
       <module name="auth" options="-parameters" />
       <module name="base" options="-parameters" />
       <module name="ecxel" options="-parameters" />
+      <module name="intellectual" options="-parameters" />
       <module name="leet" options="" />
       <module name="neety-study" options="-parameters" />
       <module name="nginx" options="-parameters" />
