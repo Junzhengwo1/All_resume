@@ -1,15 +1,13 @@
-package com.kou.mymq;
+package com.kou;
 
-import com.kou.util.EnableMyUtil;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@EnableMyUtil
-public class MyMqApplication {
+public class UtilSpringBootAutoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MyMqApplication.class, args);
+        SpringApplication.run(UtilSpringBootAutoApplication.class, args);
     }
 
 }
