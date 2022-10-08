@@ -16,10 +16,14 @@
         <option value="$PROJECT_DIR$/nginx/pom.xml" />
         <option value="$PROJECT_DIR$/sentinel/pom.xml" />
         <option value="$PROJECT_DIR$/intellectual/pom.xml" />
+        <option value="$PROJECT_DIR$/mymq/pom.xml" />
+        <option value="$PROJECT_DIR$/my-springboot-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/my-springboot-starter/mytuil-spring-boot-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/my-springboot-starter/myutil-spring-boot-autoconfigure/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <option name="BUILD_PROCESS_HEAP_SIZE" value="1024" />
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="leet" />
-        <module name="nginx" />
-        <module name="asgg" />
-        <module name="neety-study" />
-        <module name="intellectual" />
-        <module name="auth" />
         <module name="sentinel" />
-        <module name="selfann" />
-        <module name="base" />
-        <module name="ecxel" />
-        <module name="activite" />
+        <module name="neety-study" />
+        <module name="mymq" />
+        <module name="nginx" />
+        <module name="auth" />
+        <module name="intellectual" />
+        <module name="myutil-spring-boot-autoconfigure" />
         <module name="sensitive_words" />
+        <module name="activite" />
+        <module name="selfann" />
         <module name="security" />
+        <module name="myutil-spring-boot-starter" />
+        <module name="leet" />
+        <module name="ecxel" />
+        <module name="base" />
+        <module name="asgg" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -28,8 +32,12 @@
       <module name="auth" target="1.8" />
       <module name="base" target="1.8" />
       <module name="ecxel" target="1.8" />
-      <module name="intellectual" target="17" />
+      <module name="intellectual" target="1.8" />
       <module name="leet" target="1.8" />
+      <module name="my-springboot-starter" target="1.8" />
+      <module name="mymq" target="1.8" />
+      <module name="myutil-spring-boot-autoconfigure" target="1.8" />
+      <module name="myutil-spring-boot-starter" target="1.8" />
       <module name="neety-study" target="1.8" />
       <module name="nginx" target="1.8" />
       <module name="security" target="1.8" />
@@ -47,12 +55,15 @@
       <module name="ecxel" options="-parameters" />
       <module name="intellectual" options="-parameters" />
       <module name="leet" options="" />
+      <module name="mymq" options="-parameters" />
+      <module name="myutil-spring-boot-autoconfigure" options="-parameters" />
+      <module name="myutil-spring-boot-starter" options="-parameters" />
       <module name="neety-study" options="-parameters" />
       <module name="nginx" options="-parameters" />
       <module name="security" options="-parameters" />
       <module name="selfann" options="-parameters" />
-      <module name="sensitive_words" options="-parameters" />
-      <module name="sentinel" options="-parameters" />
+      <module name="sensitive_words" options="" />
+      <module name="sentinel" options="" />
     </option>
   </component>
 </project>

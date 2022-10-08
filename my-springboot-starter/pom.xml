@@ -11,10 +11,9 @@
 
     <modules>
         <module>myutil-spring-boot-autoconfigure</module>
-        <module>mytuil-spring-boot-starter</module>
+        <module>myutil-spring-boot-starter</module>
     </modules>
 
-    <groupId>com.kou</groupId>
     <artifactId>my-springboot-starter</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>my-springboot-starter</name>
@@ -22,7 +21,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>17</java.version>
     </properties>
 
     <dependencies>

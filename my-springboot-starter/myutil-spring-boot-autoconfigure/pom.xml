@@ -11,7 +11,7 @@
 
     <artifactId>myutil-spring-boot-autoconfigure</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>util-spring-boot-auto</name>
+    <name>myutil-spring-boot-autoconfigure</name>
 
     <properties>
         <java.version>1.8</java.version>
