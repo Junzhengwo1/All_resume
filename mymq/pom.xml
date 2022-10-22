@@ -8,6 +8,7 @@
         <version>2.7.3</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
     <groupId>com.kou</groupId>
     <artifactId>mymq</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -40,11 +41,11 @@
 
 
         <!-- 自己的坐标玩一下 -->
-        <dependency>
-            <groupId>com.kou</groupId>
-            <artifactId>my-springboot-starter</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.kou</groupId>-->
+<!--            <artifactId>my-springboot-starter</artifactId>-->
+<!--            <version>0.0.1-SNAPSHOT</version>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>com.kou</groupId>
@@ -59,8 +60,9 @@
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
-
     </dependencies>
+
+
 
     <build>
         <plugins>

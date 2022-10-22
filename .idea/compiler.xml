@@ -17,13 +17,13 @@
         <module name="myutil-spring-boot-autoconfigure" />
         <module name="sensitive_words" />
         <module name="activite" />
-        <module name="selfann" />
-        <module name="security" />
         <module name="myutil-spring-boot-starter" />
+        <module name="security" />
+        <module name="selfann" />
         <module name="leet" />
         <module name="ecxel" />
-        <module name="base" />
         <module name="asgg" />
+        <module name="base" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -32,12 +32,12 @@
       <module name="auth" target="1.8" />
       <module name="base" target="1.8" />
       <module name="ecxel" target="1.8" />
-      <module name="intellectual" target="1.8" />
+      <module name="intellectual" target="17" />
       <module name="leet" target="1.8" />
-      <module name="my-springboot-starter" target="1.8" />
+      <module name="my-springboot-starter" target="17" />
       <module name="mymq" target="1.8" />
-      <module name="myutil-spring-boot-autoconfigure" target="1.8" />
-      <module name="myutil-spring-boot-starter" target="1.8" />
+      <module name="myutil-spring-boot-autoconfigure" target="17" />
+      <module name="myutil-spring-boot-starter" target="17" />
       <module name="neety-study" target="1.8" />
       <module name="nginx" target="1.8" />
       <module name="security" target="1.8" />
@@ -62,8 +62,8 @@
       <module name="nginx" options="-parameters" />
       <module name="security" options="-parameters" />
       <module name="selfann" options="-parameters" />
-      <module name="sensitive_words" options="" />
-      <module name="sentinel" options="" />
+      <module name="sensitive_words" options="-parameters" />
+      <module name="sentinel" options="-parameters" />
     </option>
   </component>
 </project>

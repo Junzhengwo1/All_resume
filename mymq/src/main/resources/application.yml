@@ -2,4 +2,4 @@ util:
   my:
     date:
       #latitude: 0d
-      zone: 2
+      zone: 8

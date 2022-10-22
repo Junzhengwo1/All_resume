@@ -49,12 +49,12 @@ package leetcode.editor.cn;
 //Java：无重复字符的最长子串
 public class LongestSubstringWithoutRepeatingCharacters{
     public static void main(String[] args) {
-        Solution solution = new LongestSubstringWithoutRepeatingCharacters().new Solution();
+        Solution solution = new Solution();
         // TO TEST
     }
     
     //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+    static class Solution {
     public int lengthOfLongestSubstring(String s) {
 
         return 0;
