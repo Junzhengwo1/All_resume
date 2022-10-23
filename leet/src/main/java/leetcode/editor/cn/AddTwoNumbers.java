@@ -85,7 +85,6 @@ public class AddTwoNumbers{
 
         /**
          * 打印链表
-         * @param node
          */
         public void list(ListNode node){
             ListNode temp = node;

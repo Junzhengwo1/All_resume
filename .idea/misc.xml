@@ -20,6 +20,7 @@
         <option value="$PROJECT_DIR$/my-springboot-starter/pom.xml" />
         <option value="$PROJECT_DIR$/my-springboot-starter/mytuil-spring-boot-starter/pom.xml" />
         <option value="$PROJECT_DIR$/my-springboot-starter/myutil-spring-boot-autoconfigure/pom.xml" />
+        <option value="$PROJECT_DIR$/my-thread/pom.xml" />
       </list>
     </option>
   </component>

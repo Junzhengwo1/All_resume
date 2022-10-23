@@ -9,6 +9,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="sentinel" />
+        <module name="my-thread" />
         <module name="neety-study" />
         <module name="mymq" />
         <module name="nginx" />
@@ -35,6 +36,7 @@
       <module name="intellectual" target="17" />
       <module name="leet" target="1.8" />
       <module name="my-springboot-starter" target="17" />
+      <module name="my-thread" target="17" />
       <module name="mymq" target="1.8" />
       <module name="myutil-spring-boot-autoconfigure" target="17" />
       <module name="myutil-spring-boot-starter" target="17" />
@@ -55,6 +57,7 @@
       <module name="ecxel" options="-parameters" />
       <module name="intellectual" options="-parameters" />
       <module name="leet" options="" />
+      <module name="my-thread" options="-parameters" />
       <module name="mymq" options="-parameters" />
       <module name="myutil-spring-boot-autoconfigure" options="-parameters" />
       <module name="myutil-spring-boot-starter" options="-parameters" />

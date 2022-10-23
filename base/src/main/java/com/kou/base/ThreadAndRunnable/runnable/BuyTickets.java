@@ -1,4 +1,4 @@
-package ThreadAndRunnable.runnable;
+package com.kou.base.ThreadAndRunnable.runnable;
 /**
  * @author JIAJUN KOU
  * 使用线程实现，买票案例
