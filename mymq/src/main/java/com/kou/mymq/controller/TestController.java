@@ -20,7 +20,6 @@ public class TestController {
      */
     @GetMapping("/get")
     public String getMyUtilDate(){
-        LocalDate localDate = new LocalDate();
         return myDateUtil.getLocalTime();
     }
 }
