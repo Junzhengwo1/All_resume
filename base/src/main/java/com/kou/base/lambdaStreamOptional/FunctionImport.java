@@ -1,7 +1,5 @@
 package com.kou.base.lambdaStreamOptional;
 
-import java.util.function.Consumer;
-import java.util.function.Function;
 
 /**
  * TODO 方法引入相关(需要结合lambda表达式)
