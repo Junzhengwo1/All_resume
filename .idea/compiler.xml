@@ -26,26 +26,17 @@
         <module name="asgg" />
         <module name="base" />
       </profile>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-configuration-processor/3.0.5/a042112791600faeb5c7d65d71277a9c9dd9996c/spring-boot-configuration-processor-3.0.5.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.26/8f8cf0372abf564913e9796623aac4c8ea44025a/lombok-1.18.26.jar" />
+        </processorPath>
+        <module name="demo.main" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="activite" target="1.8" />
-      <module name="asgg" target="1.8" />
-      <module name="auth" target="1.8" />
-      <module name="base" target="1.8" />
-      <module name="ecxel" target="1.8" />
-      <module name="intellectual" target="17" />
-      <module name="leet" target="1.8" />
-      <module name="my-springboot-starter" target="17" />
-      <module name="my-thread" target="17" />
-      <module name="mymq" target="1.8" />
-      <module name="myutil-spring-boot-autoconfigure" target="17" />
-      <module name="myutil-spring-boot-starter" target="17" />
-      <module name="neety-study" target="1.8" />
-      <module name="nginx" target="1.8" />
-      <module name="security" target="1.8" />
-      <module name="selfann" target="1.8" />
-      <module name="sensitive_words" target="1.8" />
-      <module name="sentinel" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

@@ -9,8 +9,6 @@
       <module fileurl="file://$PROJECT_DIR$/base/base.iml" filepath="$PROJECT_DIR$/base/base.iml" />
       <module fileurl="file://$PROJECT_DIR$/ecxel/ecxel.iml" filepath="$PROJECT_DIR$/ecxel/ecxel.iml" />
       <module fileurl="file://$PROJECT_DIR$/intellectual/intellectual.iml" filepath="$PROJECT_DIR$/intellectual/intellectual.iml" />
-      <module fileurl="file://$PROJECT_DIR$/leet/leet.iml" filepath="$PROJECT_DIR$/leet/leet.iml" />
-      <module fileurl="file://$PROJECT_DIR$/my-springboot-starter/my-springboot-starter.iml" filepath="$PROJECT_DIR$/my-springboot-starter/my-springboot-starter.iml" />
       <module fileurl="file://$PROJECT_DIR$/my-thread/my-thread.iml" filepath="$PROJECT_DIR$/my-thread/my-thread.iml" />
       <module fileurl="file://$PROJECT_DIR$/mymq/mymq.iml" filepath="$PROJECT_DIR$/mymq/mymq.iml" />
       <module fileurl="file://$PROJECT_DIR$/my-springboot-starter/myutil-spring-boot-autoconfigure/myutil-spring-boot-autoconfigure.iml" filepath="$PROJECT_DIR$/my-springboot-starter/myutil-spring-boot-autoconfigure/myutil-spring-boot-autoconfigure.iml" />
