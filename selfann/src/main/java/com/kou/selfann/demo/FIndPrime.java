@@ -56,7 +56,7 @@ public class FIndPrime {
 
         //CompletableFuture.allOf(completableFutures.toArray(new CompletableFuture[0])).join();
         long end = System.currentTimeMillis();
-        System.out.println("找到质数：" + integers.size() + "个;共耗时："+(end-start) );
+        System.out.println("找到质数：" + integers.size() + "个;共耗时：" + (end - start));
         // 关闭线程池，释放资源
         poolExecutor.shutdown();
 

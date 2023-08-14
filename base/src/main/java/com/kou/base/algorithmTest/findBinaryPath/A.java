@@ -1,4 +1,4 @@
-package com.kou.selfann.demo;
+package com.kou.base.algorithmTest.findBinaryPath;
 
 /**
  * @author JIAJUN KOU
