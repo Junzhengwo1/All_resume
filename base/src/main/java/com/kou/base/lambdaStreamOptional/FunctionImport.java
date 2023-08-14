@@ -11,22 +11,22 @@ package com.kou.base.lambdaStreamOptional;
 public class FunctionImport {
 
     public static void main(String[] args) {
-        //最原始的调用函数式接口的方式 采取匿名内部内类的方式
-        lambdaStreamOptional.MyFunctionInterface myFunctionInterface = new lambdaStreamOptional.MyFunctionInterface() {
-            @Override
-            public void get(Integer a) {
-                System.out.println("get-->" + a);
-            }
-        };
-        myFunctionInterface.get(1);
-
-        //TODO 1、改用成lambda表达式 静态方法引入
-        lambdaStreamOptional.MyFunctionInterface staticGet = FunctionImport::staticGet;
-        staticGet.get(2);
-        //TODO 2、实例方法引入
-        FunctionImport functionImport = new FunctionImport();
-        lambdaStreamOptional.MyFunctionInterface2 myFunctionInterface2 = functionImport::objGet;
-        System.out.println(myFunctionInterface2.getMeg("王queen"));
+//        //最原始的调用函数式接口的方式 采取匿名内部内类的方式
+//        lambdaStreamOptional.MyFunctionInterface myFunctionInterface = new lambdaStreamOptional.MyFunctionInterface() {
+//            @Override
+//            public void get(Integer a) {
+//                System.out.println("get-->" + a);
+//            }
+//        };
+//        myFunctionInterface.get(1);
+//
+//        //TODO 1、改用成lambda表达式 静态方法引入
+//        lambdaStreamOptional.MyFunctionInterface staticGet = FunctionImport::staticGet;
+//        staticGet.get(2);
+//        //TODO 2、实例方法引入
+//        FunctionImport functionImport = new FunctionImport();
+//        lambdaStreamOptional.MyFunctionInterface2 myFunctionInterface2 = functionImport::objGet;
+//        System.out.println(myFunctionInterface2.getMeg("王queen"));
 
 
 
