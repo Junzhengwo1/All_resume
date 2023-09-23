@@ -15,14 +15,14 @@ public class BinSearch {
      * @param a 查找的数组
      */
     public static int binSearch(int [] a){
+        //输入待查找的数字
+        int param = new Scanner(System.in).nextInt();
         //第一个变量，起始位置
         int start = 0;
         //第二个变量，结束位置
         int end = a.length-1;
         //第三个变量，待查找数组的中间的位置
         int mid = 0;
-        //输入待查找的数字
-        int param = new Scanner(System.in).nextInt();
         //保存找到的数字的下标
         //表示待查找的数不存在于数组中
         int index = -1;
@@ -45,7 +45,7 @@ public class BinSearch {
 
     public static void main(String[] args) {
         //初始化数组
-        int[] a = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9};
+        int[] a = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9,11};
         int i = BinSearch.binSearch(a);
         System.out.println(i);
     }

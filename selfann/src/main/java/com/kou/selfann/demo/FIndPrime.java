@@ -2,9 +2,12 @@ package com.kou.selfann.demo;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
+
+import static com.kou.selfann.demo.MyCallable.isPrime;
 
 public class FIndPrime {
 
@@ -23,7 +26,7 @@ public class FIndPrime {
         AtomicInteger base =new AtomicInteger(22222222) ;
         int target = 1000;
 
-        HashSet<Integer> integers = new HashSet<>();
+        HashSet<Integer> integers = new LinkedHashSet<>();
 //        //模拟处理
         //AtomicInteger i = new AtomicInteger();
        long start = System.currentTimeMillis();
@@ -60,7 +63,14 @@ public class FIndPrime {
         // 关闭线程池，释放资源
         poolExecutor.shutdown();
 
+        Thread thread = new Thread();
+        thread.start();
+
+        ThreadLocal<Object> objectThreadLocal = new ThreadLocal<>();
+
     }
+
+
 
 
 //    /**
