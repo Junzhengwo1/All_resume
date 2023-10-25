@@ -1,0 +1,14 @@
+List<String> duplicateElements = list.stream()
+                .distinct()
+                .filter(e -> Collections.frequency(list, e) > 1)
+                .collect(Collectors.toList());
+
+
+statisticsList.stream().distinct()
+                .collect(Collectors.toMap(AdminRunStatusRecordStatistics::getAlarmReason, a -> a,
+                (o1, o2) -> {
+                    o1.setCount(o1.getCount() + o2.getCount());
+                    return o1;
+                }))
+
+

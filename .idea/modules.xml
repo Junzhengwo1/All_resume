@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/asgg/asgg.iml" filepath="$PROJECT_DIR$/asgg/asgg.iml" />
       <module fileurl="file://$PROJECT_DIR$/auth/auth.iml" filepath="$PROJECT_DIR$/auth/auth.iml" />
       <module fileurl="file://$PROJECT_DIR$/base/base.iml" filepath="$PROJECT_DIR$/base/base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/demo.main.iml" filepath="$PROJECT_DIR$/.idea/modules/demo.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/ecxel/ecxel.iml" filepath="$PROJECT_DIR$/ecxel/ecxel.iml" />
       <module fileurl="file://$PROJECT_DIR$/intellectual/intellectual.iml" filepath="$PROJECT_DIR$/intellectual/intellectual.iml" />
       <module fileurl="file://$PROJECT_DIR$/my-thread/my-thread.iml" filepath="$PROJECT_DIR$/my-thread/my-thread.iml" />
