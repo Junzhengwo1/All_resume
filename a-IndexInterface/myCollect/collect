@@ -12,3 +12,5 @@ statisticsList.stream().distinct()
                 }))
 
 
+String o = '\''+localTime + '\'';
+            String a = " LAST_UPDATE_TIME = "+o+",";
