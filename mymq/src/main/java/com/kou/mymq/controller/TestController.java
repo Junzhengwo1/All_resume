@@ -3,7 +3,6 @@ package com.kou.mymq.controller;
 import com.kou.mymq.fegin.TestFeign;
 import com.kou.service.MQProducer;
 import com.kou.util.MyDateUtil;
-import org.joda.time.LocalDate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

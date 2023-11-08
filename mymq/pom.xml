@@ -53,6 +53,7 @@
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
+
         <dependency>
             <groupId>com.kou</groupId>
             <artifactId>my-transaction-mq-spring-boot-starter</artifactId>
@@ -61,7 +62,8 @@
         </dependency>
 
 
-<!--        <dependency>-->
+
+        <!--        <dependency>-->
 <!--            <groupId>com.kou</groupId>-->
 <!--            <artifactId>myutil-spring-boot-starter</artifactId>-->
 <!--            <version>0.0.1-SNAPSHOT</version>-->
