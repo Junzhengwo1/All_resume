@@ -1,6 +1,7 @@
 package com.kou.mymq.controller;
 
 import com.kou.mymq.fegin.TestFeign;
+import com.kou.service.MQProducer;
 import com.kou.util.MyDateUtil;
 import org.joda.time.LocalDate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,9 @@ public class TestController {
 
     @Autowired
     private MyDateUtil myDateUtil;
+
+    @Autowired
+    private MQProducer mqProducer;
 
     @Autowired
     TestFeign testFeign;
