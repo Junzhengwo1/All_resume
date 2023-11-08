@@ -21,6 +21,7 @@
         <module name="myutil-spring-boot-starter" />
         <module name="security" />
         <module name="selfann" />
+        <module name="my-transaction-mq-spring-boot-starter" />
         <module name="leet" />
         <module name="ecxel" />
         <module name="asgg" />
@@ -49,6 +50,7 @@
       <module name="intellectual" options="-parameters" />
       <module name="leet" options="" />
       <module name="my-thread" options="-parameters" />
+      <module name="my-transaction-mq-spring-boot-starter" options="-parameters" />
       <module name="mymq" options="-parameters" />
       <module name="myutil-spring-boot-autoconfigure" options="-parameters" />
       <module name="myutil-spring-boot-starter" options="-parameters" />

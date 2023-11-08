@@ -12,6 +12,7 @@
     <modules>
         <module>myutil-spring-boot-autoconfigure</module>
         <module>myutil-spring-boot-starter</module>
+        <module>my-transaction-mq-spring-boot-starter</module>
     </modules>
 
     <groupId>com.kou</groupId>
