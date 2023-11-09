@@ -1,13 +1,13 @@
-package com.kou.neetystudy;
+package com.kou.nettystudy;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SuppressWarnings("all")
 @SpringBootApplication
-public class NeetyStudyApplication {
+public class NettyStudyApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(NeetyStudyApplication.class, args);
+        SpringApplication.run(NettyStudyApplication.class, args);
     }
 
 }

@@ -26,6 +26,7 @@
         <option value="$PROJECT_DIR$/my-springboot-starter/myutil-spring-boot-autoconfigure/pom.xml" />
         <option value="$PROJECT_DIR$/my-thread/pom.xml" />
         <option value="$PROJECT_DIR$/my-springboot-starter/my-transaction-mq-spring-boot-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/netty-study/pom.xml" />
       </list>
     </option>
   </component>

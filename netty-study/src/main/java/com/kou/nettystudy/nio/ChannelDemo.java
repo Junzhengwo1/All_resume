@@ -1,4 +1,4 @@
-package com.kou.neetystudy.nio;
+package com.kou.nettystudy.nio;
 
 import java.io.*;
 import java.net.InetSocketAddress;

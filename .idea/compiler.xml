@@ -10,12 +10,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="sentinel" />
         <module name="my-thread" />
-        <module name="neety-study" />
         <module name="mymq" />
         <module name="nginx" />
         <module name="auth" />
         <module name="intellectual" />
         <module name="myutil-spring-boot-autoconfigure" />
+        <module name="netty-study" />
         <module name="sensitive_words" />
         <module name="activite" />
         <module name="myutil-spring-boot-starter" />
@@ -33,7 +33,7 @@
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-configuration-processor/3.0.5/a042112791600faeb5c7d65d71277a9c9dd9996c/spring-boot-configuration-processor-3.0.5.jar" />
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.26/8f8cf0372abf564913e9796623aac4c8ea44025a/lombok-1.18.26.jar" />
         </processorPath>
-        <module name="com.example.demo.main" />
+        <module name="demo.main" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -54,7 +54,7 @@
       <module name="mymq" options="-parameters" />
       <module name="myutil-spring-boot-autoconfigure" options="-parameters" />
       <module name="myutil-spring-boot-starter" options="-parameters" />
-      <module name="neety-study" options="-parameters" />
+      <module name="netty-study" options="-parameters" />
       <module name="nginx" options="-parameters" />
       <module name="security" options="-parameters" />
       <module name="selfann" options="-parameters" />

@@ -1,0 +1,15 @@
+NIO：
+    三大组件：
+        1、Channel：用于在网络中传输数据
+            1)FileChannel: 它是阻塞模式下
+        2、Selector：用于监控多个Channel的IO事件
+        3、Buffer：用于存储数据
+
+
+    4、SelectorKey：用于绑定Channel和Selector
+    5、SelectionKey：用于绑定Channel和SelectorKey
+    6、SocketChannel：用于网络通信的客户端
+    7、ServerSocketChannel：用于网络通信的服务端
+    8、ServerSocket：用于监听端口
+    9、SocketChannel：用于网络通信的客户端
+    10、Socket：用于网络通信的客户端

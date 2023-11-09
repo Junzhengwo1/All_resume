@@ -1,4 +1,4 @@
-package com.kou.neetystudy.serverDemo;
+package com.kou.nettystudy.serverDemo;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
