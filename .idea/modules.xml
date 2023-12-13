@@ -14,6 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/mymq/mymq.iml" filepath="$PROJECT_DIR$/mymq/mymq.iml" />
       <module fileurl="file://$PROJECT_DIR$/my-springboot-starter/myutil-spring-boot-autoconfigure/myutil-spring-boot-autoconfigure.iml" filepath="$PROJECT_DIR$/my-springboot-starter/myutil-spring-boot-autoconfigure/myutil-spring-boot-autoconfigure.iml" />
       <module fileurl="file://$PROJECT_DIR$/my-springboot-starter/myutil-spring-boot-starter/myutil-spring-boot-starter.iml" filepath="$PROJECT_DIR$/my-springboot-starter/myutil-spring-boot-starter/myutil-spring-boot-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netty-study/netty-study.iml" filepath="$PROJECT_DIR$/netty-study/netty-study.iml" />
       <module fileurl="file://$PROJECT_DIR$/nginx/nginx.iml" filepath="$PROJECT_DIR$/nginx/nginx.iml" />
       <module fileurl="file://$PROJECT_DIR$/security/security.iml" filepath="$PROJECT_DIR$/security/security.iml" />
       <module fileurl="file://$PROJECT_DIR$/selfann/selfann.iml" filepath="$PROJECT_DIR$/selfann/selfann.iml" />
