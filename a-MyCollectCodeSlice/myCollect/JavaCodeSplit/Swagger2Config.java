@@ -2,7 +2,10 @@ package com.csin.dh.common.config;
 
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnExpression;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.web.context.WebServerInitializedEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.annotation.Bean;
@@ -36,13 +39,19 @@ import java.util.List;
 @Configuration
 @EnableSwagger2
 @EnableWebMvc
+@ConditionalOnExpression("${swagger.enabled}")
 @ConditionalOnClass(SpringfoxWebMvcConfiguration.class)
 public class Swagger2Config implements WebMvcConfigurer, ApplicationListener<WebServerInitializedEvent> {
+
+    @Value("${swagger.enabled}")
+    private Boolean enable;
+
 
     @Bean
     public Docket createRestApi(){
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
+                .enable(enable)
                 .select()
                 .apis(RequestHandlerSelectors
                         .withClassAnnotation(RestController.class))
@@ -70,10 +79,12 @@ public class Swagger2Config implements WebMvcConfigurer, ApplicationListener<Web
     @SneakyThrows
     @Override
     public void onApplicationEvent(WebServerInitializedEvent event) {
-        //获取IP
-        String hostAddress = Inet4Address.getLocalHost().getHostAddress();
-        //获取端口号
-        int port = event.getWebServer().getPort();
-        log.info("项目启动启动成功！swagger2接口文档地址: http://"+hostAddress+":"+port+"/doc.html");
+        if (enable){
+            //获取IP
+            String hostAddress = Inet4Address.getLocalHost().getHostAddress();
+            //获取端口号
+            int port = event.getWebServer().getPort();
+            log.info("项目启动启动成功！swagger2接口文档地址: http://"+hostAddress+":"+port+"/doc.html");
+        }
     }
 }
