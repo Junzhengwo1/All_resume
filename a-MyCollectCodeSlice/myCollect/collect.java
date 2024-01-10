@@ -90,5 +90,16 @@ private List<SetSysScorePO> countScoreGrade(String id,Integer startScore, Intege
         .list();
         }
 
-
+        // 分数段查询
+        return lambdaQuery()
+        .ne(StringUtils.isNotBlank(id), SetSysScorePO::getId, id)
+        .and(lq->lq.lt(SetSysScorePO::getStartScore, startScore)
+        .gt(SetSysScorePO::getEndScore, startScore))
+        .or(lq->lq.gt(SetSysScorePO::getEndScore, endScore)
+        .lt(SetSysScorePO::getStartScore,endScore))
+        .or(lq->lq.gt(SetSysScorePO::getStartScore, startScore)
+        .lt(SetSysScorePO::getStartScore, endScore))
+        .or(lq->lq.gt(SetSysScorePO::getEndScore, startScore)
+        .lt(SetSysScorePO::getEndScore, endScore))
+        .list();
 
